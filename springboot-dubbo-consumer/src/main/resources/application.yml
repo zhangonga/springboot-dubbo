@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: springboot-dubbo-consumer
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: zookeeper://localhost:2181

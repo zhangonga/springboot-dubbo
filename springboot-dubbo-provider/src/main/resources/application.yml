@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-dubbo-provider
+
+server:
+  port:8080
+
+dubbo:
+  application:
+    name: ${spring.application.name}
+  registry:
+    address: zookeepr://localhost:2181
+  scan:
+    base-packages: tech.zg.springboot.dubbo.provider.service
+  provider:
+    timeout: 1000
+  protocol:
+    name: dubbo
+    port: 20880
