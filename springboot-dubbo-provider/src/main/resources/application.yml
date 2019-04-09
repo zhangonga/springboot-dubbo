@@ -9,11 +9,10 @@ dubbo:
   application:
     name: ${spring.application.name}
   registry:
-    address: zookeepr://localhost:2181
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+    id: ${spring.application.name}
   scan:
-    base-packages: tech.zg.springboot.dubbo.provider.service
+    basePackages: tech.zg.springboot.dubbo.provider.service
   provider:
     timeout: 1000
-  protocol:
-    name: dubbo
-    port: 20880

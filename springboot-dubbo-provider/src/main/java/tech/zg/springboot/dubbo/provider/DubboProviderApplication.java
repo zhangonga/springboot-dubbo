@@ -1,6 +1,7 @@
 package tech.zg.springboot.dubbo.provider;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
@@ -11,8 +12,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @version: 1.0.0
  */
 @SpringBootApplication
-public class DubboServiceApplication {
+public class DubboProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DubboServiceApplication.class, args);
+        SpringApplication.run(DubboProviderApplication.class, args);
     }
 }

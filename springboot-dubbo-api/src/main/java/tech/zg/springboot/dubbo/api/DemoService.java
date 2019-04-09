@@ -1,21 +1,22 @@
 package tech.zg.springboot.dubbo.api;
 
 /**
- * 测试类API
+ * Demo类API
  * <p>
  *
  * @author: 张弓
  * @version: 1.0.0
  */
-public interface TestService {
+public interface DemoService {
 
     /**
-     * 读取一些消息
+     * 测试服务
      * <p>
      *
+     * @param name
      * @return String
      * @author: 张弓
      * @version: 1.0.0
      */
-    String getSomeThing();
+    String sayHello(String name);
 }
