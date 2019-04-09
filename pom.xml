@@ -27,10 +27,10 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
         <dubbo.version>2.7.0</dubbo.version>
         <zookeeper.version>3.4.13</zookeeper.version>
+        <apache.curator.version>4.2.0</apache.curator.version>
     </properties>
 
     <dependencyManagement>
